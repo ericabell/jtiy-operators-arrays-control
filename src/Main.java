@@ -4,9 +4,9 @@ public class Main {
         System.out.println("begin: program needs at least 3 arguments. First and third are ints. Second is a string.");
 
         /* check for empty args, print list of args in non-empty */
-        if(args.length < 2) System.out.println("Didn't pass enough args");
-
-        else {
+        if (args.length < 2) {
+            System.out.println("Didn't pass enough args");
+        } else {
             System.out.println(" * Printing arguments passed into main");
             for (int i = 0; i < args.length; i++) {
                 System.out.println("   Argument " + i + ": " + args[i]);
@@ -17,16 +17,15 @@ public class Main {
 
             /* Branches on one of the arguments */
             System.out.println(" * Branching on first argument int.");
-            if( firstArgument == 1 ){
+            if (firstArgument == 1) {
                 System.out.println("   Hey! First argument was 1.");
-            }
-            else {
+            } else {
                 System.out.println("   First argument was not 1.");
             }
 
             /* switch on the second argument, which is a string */
             System.out.println(" * Switch on second argument.");
-            switch(args[1]) {
+            switch (args[1]) {
                 case "one":
                     System.out.println("   second argument was one");
                     break;
@@ -42,7 +41,7 @@ public class Main {
             int index = 0;
             String second_argument = args[1];
             System.out.println(" * While loop on second argument, which is a string.");
-            while( index < second_argument.length() ) {
+            while (index < second_argument.length()) {
                 System.out.println("   Char at " + index + " is " + second_argument.charAt(index));
                 index++;
             }
@@ -62,7 +61,7 @@ public class Main {
             /* compare firstArgument and thirdArgument using less than or equals */
             int thirdArgument = Integer.parseInt(args[2]);
             System.out.println(" * Compare first and third args with less than or equal");
-            if( firstArgument <= thirdArgument) {
+            if (firstArgument <= thirdArgument) {
                 System.out.println("   the firstArgument is less than or equal to the thirdArgument");
             }
         }
